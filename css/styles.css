@@ -5,11 +5,16 @@
     display: table;
     clear: both;
 }
-body {
+.wrapper {
     font-family: Roboto,OpenSans, sans-serif;
     width: 1200px;
     margin: 0 auto;
 }
+.name::first-letter {
+    color: #1abc9c;
+   font-weight: bold;
+}
+
 .page-header {
     margin-bottom: 35px;
 }
@@ -41,17 +46,15 @@ body {
     padding: 0;
     list-style: none;
 }
-.site-navigation li {
+.menu_link {
     float: left;
     padding-right: 0;
 }
-.site-navigation li:not(:last-child) {
+.menu_link:not(:last-child) {
 margin-right: 36px;
 }
-.pagelogo::first-letter {
-    color: #1abc9c;  
-} 
-.mark {
+ 
+.name {
     font-size: 30px;
     font-family:"Roboto-Light","Roboto-Black","AdobeInvisFont",
     "MyriadPro-Regular";
@@ -72,6 +75,16 @@ margin-right: 36px;
     margin-top: 100px;
     margin-bottom: 24px;
 }
+.products-title::after {
+    content: '';
+    display: block;
+    background: #1abc9c;
+    width: 165px;
+    height: 8px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
 .pagelogo {
     float: left;
 }
@@ -80,7 +93,6 @@ margin-right: 36px;
 margin-top: 36px;
 } 
 .gallery {
-    max-width: 1164px;
     margin: 0 auto; 
 }
 .products-list-item_1 {
@@ -111,14 +123,7 @@ margin-top: 36px;
 {
     margin-right: 30px;
 }
-.band {
-background: #1abc9c;
-width: 165px;
-height: 8px;
-margin: 0 auto;
-margin-top: 30px;
-margin-bottom: 80px;
-}
+
 .news {
     text-transform: uppercase;
     font-weight: bold;
